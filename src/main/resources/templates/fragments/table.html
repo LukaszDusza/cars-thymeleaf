@@ -1,0 +1,27 @@
+<div class="row" xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="table">
+
+    <div class="col-md-6">
+
+        <table>
+
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Power</th>
+                <th>Year production</th>
+                <th>Picture</th>
+            </tr>
+
+            <tr th:each="car : ${cars}">
+                <td th:text=${car.getBrand()}></td>
+                <td th:text=${car.getModel()}></td>
+                <td th:text=${car.getPower()}></td>
+                <td th:text=${car.getYearProduction()}></td>
+                <td th:text=${car.getFoto()}></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>

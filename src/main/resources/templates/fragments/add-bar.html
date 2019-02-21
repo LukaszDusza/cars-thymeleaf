@@ -1,0 +1,56 @@
+<div class="row" xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="sport-bar">
+    <div class="col-md-6">
+        add new Car
+        <form th:action="@{/add/sport}" th:object="${car}" method="post">
+            <table>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Power</th>
+                    <th>Year production</th>
+                    <th>add picture</th>
+
+                </tr>
+                <tr>
+                    <td><input type="text" name="brand" value=""/></td>
+                    <td><input type="text" name="model" value=""/></td>
+                    <td><input type="text" name="power" value=""/></td>
+                    <td><input type="text" name="yearProduction" value=""/>
+                    <td><input type="text" name="foto" value=""/></td>
+                    <td>
+                        <button class="btn btn-success btn-sm button" type="submit">submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<div class="row" xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="offroad-bar">
+    <div class="col-md-6">
+        add new Car
+        <form th:action="@{/add/offroad}" th:object="${car}" method="post">
+            <table>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Power</th>
+                    <th>Year production</th>
+                    <th>add picture</th>
+
+                </tr>
+                <tr>
+                    <td><input type="text" name="brand" value=""/></td>
+                    <td><input type="text" name="model" value=""/></td>
+                    <td><input type="text" name="power" value=""/></td>
+                    <td><input type="text" name="yearProduction" value=""/>
+                    <td><input type="text" name="foto" value=""/></td>
+                    <td>
+                        <button class="btn btn-success btn-sm button" type="submit">submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+

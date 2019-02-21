@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="fragments/init :: head"></head>
+
+
+<body>
+
+<h4 class="title" th:text="#{offroad.welcome.title}"></h4>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12" th:replace="fragments/table :: table"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" th:replace="fragments/add-bar :: offroad-bar"></div>
+    </div>
+
+    <div class="row" th:replace="fragments/buttons :: back"></div>
+
+</div>
+
+
+</body>
+
+</html>
